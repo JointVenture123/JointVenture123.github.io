@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    --primary: #ffffff;
+}
+
+body {
+    margin: 0;
+    background-color: var(--primary);
+}
+
+.primary {
+    color: var(--primary);
+}
+
+.primary-bg {
+    background-color: var(--primary);
+}
+
+hr {
+    border: 1px solid black;
+    margin: 40px 20%;
+}
+
+.section-1 p{
+    margin: 0px 10%;
+    color: black;
+    font-size: 18px;
+}
+
+.section-1 h1 {
+    text-align: center;
+    color: black;
+    font-size: 48px;
+    margin: 0;
+}
+
+.section-2 {
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.section-2 p{
+    margin: 0px 10%;
+    color: black;
+    font-size: 18px;
+}
+
+.section-2 h1 {
+    text-align: center;
+    color: black;
+    font-size: 48px;
+}
+
+
+footer {
+    background-color: #333;
+    margin: 0;
+    width: 100%;
+    color: white;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.wave {
+    position: relative;
+    top: 50px;
+}
+
+.wave-2 {
+    z-index: -100;
+}
+
+.wave-top {
+    z-index: -50;
+}
+
+.wave-footer {
+    position: relative;
+    top: 280px;
+    transform: rotate(180deg);
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+    background-color: #333;
+}
+
+footer ul li {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 24px;
+}
+
+.nav-title {
+    margin: 0% 100px 0% 100px;
+}
+
+.nav-active {
+    border-bottom: 5px solid var(--primary)
+}
+
+nav img {
+    display: inline-block;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 24px;
+  color: white;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link {
+    margin-top: 30px;
+}
+
+.nav-link:hover {
+    background-color: #111;
+}
+
+.logo {
+    background-color: white;
+    border-radius: 30%;
+    margin-left: 20px;
+}
+
+.big-logo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 200px;
+    height: 500px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.product {
+    margin-left: 100px;
+}
+
+main {
+    position: relative;
+    bottom: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+    .big-logo {
+        bottom: 0px;
+        height: 250px;
+    }
+    main {
+        bottom: 0px;
+    }
+    .wave-footer {
+        display: none;
+    }
+}
